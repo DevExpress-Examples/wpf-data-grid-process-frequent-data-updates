@@ -1,0 +1,37 @@
+﻿<dx:ThemedWindow
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataUpdatesExample"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="ChunkAndOptSummariesExample.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200">
+    <Window.DataContext>
+        <local:ChunkAndOptSummariesViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <dxg:GridControl Name="grid" AutoGenerateColumns="None" AllowLiveDataShaping="True" OptimizeSummaryCalculation="True" ItemsSource="{Binding Devices}">
+            <dxg:GridControl.TotalSummary>
+                <dxg:GridSummaryItem SummaryType="Count" FieldName="Name" DisplayFormat="Total count: {0:N0}"/>
+            </dxg:GridControl.TotalSummary>
+            <dxg:GridControl.GroupSummary>
+                <dxg:GridSummaryItem FieldName="Sensor1" SummaryType="Average"/>
+                <dxg:GridSummaryItem FieldName="Sensor2" SummaryType="Sum"/>
+                <dxg:GridSummaryItem FieldName="Sensor3" SummaryType="Average"/>
+            </dxg:GridControl.GroupSummary>
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Name"/>
+                <dxg:GridColumn FieldName="Group" GroupIndex="0"/>
+                <dxg:GridColumn FieldName="Sensor1"/>
+                <dxg:GridColumn FieldName="Sensor2"/>
+                <dxg:GridColumn FieldName="Sensor3"/>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView GroupSummaryDisplayMode="AlignByColumns" ShowTotalSummary="True"  />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</dx:ThemedWindow>
