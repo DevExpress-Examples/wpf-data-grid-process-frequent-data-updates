@@ -13,7 +13,7 @@
         <local:ChunkAndOptSummariesViewModel/>
     </Window.DataContext>
     <Grid>
-        <dxg:GridControl Name="grid" AutoGenerateColumns="None" OptimizeSummaryCalculation="True" ItemsSource="{Binding Devices}">
+        <dxg:GridControl Name="grid" AutoGenerateColumns="None" AllowLiveDataShaping="True" OptimizeSummaryCalculation="True" ItemsSource="{Binding Devices}">
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem SummaryType="Count" FieldName="Name" DisplayFormat="Total count: {0:N0}"/>
             </dxg:GridControl.TotalSummary>
