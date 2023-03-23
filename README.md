@@ -40,7 +40,7 @@ Wrap data update batches in `BeginDataUpdate` and `EndDataUpdate` methods calls.
 
 ## RefreshDataExample
 
-Set the [AllowLiveDataShaping](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.AllowLiveDataShaping) property to `false` and use a collection that doesn't support notifications (for example, `List<T>`) to ignore data shaping operations when data is changed. Call the [GridControl.RefreshData](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.RefreshData) method to display all changes in the control. In this example, a [custom behavior](https://docs.devexpress.com/WPF/17458/mvvm-framework/behaviors/how-to-create-a-custom-behavior) refreshes the `GridControl` each second.
+Set the [AllowLiveDataShaping](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.AllowLiveDataShaping) property to `false` and use a collection that doesn't support notifications (for example, `List<T>`) to ignore data shaping operations when data is changed. Call the [GridControl.RefreshData](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.RefreshData) method to display all changes in the control. In this example, a [custom behavior](https://docs.devexpress.com/WPF/17458/mvvm-framework/behaviors/how-to-create-a-custom-behavior) refreshes the `GridControl` each second (**GridTimerRefreshBehavior**).
 
 ### Files to Review
 
