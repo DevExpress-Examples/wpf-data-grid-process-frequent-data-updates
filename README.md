@@ -59,7 +59,7 @@ Set the [AllowLiveDataShaping](https://docs.devexpress.com/WPF/DevExpress.Xpf.Gr
 * [WPF Data Grid - Call the BeginDataUpdate and EndDataUpdate Methods at the View Model Level](https://github.com/DevExpress-Examples/wpf-data-grid-call-begindataupdate-and-enddataupdate-at-view-model-level)
 * [Data Grid for WPF - Refresh the Data Grid on a Timer](https://github.com/DevExpress-Examples/wpf-data-grid-refresh-on-timer)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-process-frequent-data-updates&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-process-frequent-data-updates&~~~was_helpful=no)
 
